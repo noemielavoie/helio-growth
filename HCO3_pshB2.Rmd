@@ -4,26 +4,12 @@ date: "2021-06-08"
 output: github_document 
 ---
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
+```{r}
+## Here follows script and figures for the analysis of growth curve data from 2021_03_31 where 
+## I grew pshB2 H. modesticaldum mutant phototrophically in  medium PYE + 20uM FeSO4 under different NaHCO3-
+## treatments. No HCO3-, 1mM and 20mM. Biological triplicates were used for each treatment.
+```
+```{r}
+##code to open and access datafile
 ```
 
-## R Markdown
-
-This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
-
-When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
-
-```{r cars}
-summary(cars)
-```
-
-## Including Plots
-
-You can also embed plots, for example:
-
-```{r pressure, echo=FALSE}
-plot(pressure)
-```
-
-Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
