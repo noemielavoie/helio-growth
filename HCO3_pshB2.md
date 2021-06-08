@@ -38,5 +38,7 @@ ggplot(data = HCO3_pshB2, aes(x = hours, y = OD, colour = treatment, shape = as.
 ![](HCO3_pshB2_files/figure-gfm/unnamed-chunk-2-1.png)<!-- -->
 
 ``` r
-##The real challenge now is to interact and modify your dataframe in R so that you can plot all OD readings as a function of time(hours) vs OD for each HCO3 treatment
+##next up is testing for statistically significant differences between treatments. 
+##For this we will compare treatments vs mean OD (at each timepoint as mean of all 3 biological reps). 
+##Will have to do a refresh on hypothesis testing approaches.
 ```
