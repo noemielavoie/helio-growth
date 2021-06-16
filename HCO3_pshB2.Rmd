@@ -20,6 +20,4 @@ ggplot(data = HCO3_pshB2, aes(x = hours, y = OD, colour = treatment, shape = as.
   geom_point()
 ```
 
-##next up is testing for statistically significant differences between treatments. 
-##For this we will compare treatments vs mean OD (at each timepoint as mean of all 3 biological reps). 
-##Will have to do a refresh on hypothesis testing approaches.
+Next up is testing for statistically significant differences between treatments.For this we will compare treatments vs mean OD (at each timepoint as mean of all 3 biological reps). Will have to do a refresh on hypothesis testing approaches.
