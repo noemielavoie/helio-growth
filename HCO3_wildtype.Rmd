@@ -1,0 +1,22 @@
+title: "HCO3 wild type growth curves"
+date: "2021-06-18"
+output: github_document 
+---
+
+
+Here follows script and figures for the analysis of growth curve data from 2021_03_31 where I grew wild type H. modesticaldum mutant phototrophically in  medium PYE + 20uM FeSO4 under different NaHCO3- treatments. No HCO3-, 1mM and 20mM. Biological triplicates were used for each treatment.
+
+```{r}
+##code to open and access datafile
+## make excel datasheet into R Dataframe, do you have all packages required?
+library(tidyverse)
+##readxl is part of tidyverse, but when you load tidyverse after installation it doesnt add readxl by default
+library(readxl)
+##your data was preloaded in the Rproject directory, so then use read_excel fucntion to retrieve the data
+HCO3_wildtype <- read_excel("2021_06_16_wildtype_HCO3.xlsx")
+##Make your first graph for fun
+ggplot(data = HCO3_wildtype, aes(x = hours, y = OD, colour = treatment, shape = as.factor(biol_rep_number))) +
+  geom_point()
+```
+
+Next up is testing for statistically significant differences between treatments.For this we will compare treatments vs mean OD (at each timepoint as mean of all 3 biological reps). Will have to do a refresh on hypothesis testing approaches.
